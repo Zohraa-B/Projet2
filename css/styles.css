@@ -248,6 +248,7 @@ h2{
 
 .filtres {  
    display: flex;
+   flex-wrap: wrap;
    padding: 5px;
 }
 
@@ -266,6 +267,9 @@ h2{
 }
 
 .filtres1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     border: lightgrey 2px solid;
     border-radius: 50px;
     font-weight: bolder;
@@ -273,6 +277,10 @@ h2{
     margin-right: 30px;
     margin-left: 20px;
     padding: 10px 18px 10px 18px;
+}
+
+.filtres1 span{
+    word-break: keep-all;
 }
 
 @media screen and (max-width:768px){
